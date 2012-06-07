@@ -1,12 +1,25 @@
 source 'https://rubygems.org'
 
+# ******************************** rememeber to do bundle install --without production ***********************
 gem 'rails', '3.2.3'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-group :development do
+
+
+# Running rspec-rails
+
+group :development, :test do
 gem 'sqlite3'
+gem 'rspec-rails' # just added for test/dev
+end
+
+#added jquery-rails here
+gem 'jquery-rails'
+
+group :test do
+  gem 'capybara'
 end
 
 group :production do

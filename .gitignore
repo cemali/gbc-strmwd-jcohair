@@ -29,5 +29,7 @@
 doc/
 *.swp
 *~
+# Ignore text files
+*.txt
 .project
 .DS_Store
