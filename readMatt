@@ -5,4 +5,52 @@
 # This application will utilize some Ruby on Rails greatest features such as devise, cucumber, rspec, twitter-bootstrap and within an HTML5 working
 # environment, while deploying in a Heroku production environment.
 # https://github.com/cemali/gbc-strmwd-jcohair => github. 
+# 04/29/2013 - left off committing to github (setting up source control).
+# 04/30/2013 -Before running bundle install, have the postgresql UP AND RUNNING .....
+# pg properties - gbc-strmwd 7Uc8Zb8qU3
+# also have to drop gbc_strmwd_test database. It should not exist when running cucumber testing.
+
+#####
+require 'active_record/connection_adapters/postgresql_adapter'
+module ActiveRecord
+  module ConnectionAdapters
+    class PostgreSQLAdapter < AbstractAdapter
+      def drop_database(name)
+        raise "Nah, I won't drop the production database" if Rails.env.production?
+        execute <<-SQL
+          UPDATE pg_catalog.pg_database
+          SET datallowconn=false WHERE datname='#{name}'
+        SQL
+
+        execute <<-SQL
+          SELECT pg_terminate_backend(pg_stat_activity.pid)
+          FROM pg_stat_activity
+          WHERE pg_stat_activity.datname = '#{name}';
+        SQL
+        execute "DROP DATABASE IF EXISTS #{quote_table_name(name)}"
+      end
+    end
+  end
+end
+### added for testing database reset.
+
+# I am not sure if the above script was added. Moving on in tutioral 
+# 05/01/13 finished adding cucumber and rspec respectivly. Cucumber is working with 12 sceneorie and 46 steps.
+# Stopping at Configuration files - gitignore
+# mail configuration - I have not done devise yet to config for mail.
+# rails destroy scaffold "name"
+# stopping at layouts - rails g bootstrap:layout application fluid ( I am working with responsive layout 05292013 )
+# 050313 - just finished with twitter bootstrap style sheet. 
+# stopping at the -DISPLAY USERS ON HOME PAGE 
+# stopping at testing the app.
+# 050813 - added logo to nav. Must add the links of the website to nav.
+# added modernizr-rails to application - 050913
+# user@example.com changeme
+# stopping at nav-bar.  - Using Twitter-bootstrap ( https://github.com/seyhunak/twitter-bootstrap-rails ) and boilerMakerRubyAppl
+# 052513 - added tombstone to page and center it - using css override and adding html5 attribute in layout and <figure> attribute in body.
+# added the //= require twitter/bootstrap/bootstrap-dropdown to the application.js 
+# adding controller and views - rails generate controller home index --no-controller-specs --skip-stylesheets --skip-javascripts
+# added carousel - not working correctly.http://twitter.github.io/bootstrap/javascript.html#carousel 52913
+# got carousel working a little - having an issue with the a href="". and link_to in the pics but it is working now.053113
+# photoShop editing on pics - outlining(quick select) - refine edge - edge detection(smooth edges(sliders) shift edge - tighten edges
 #
