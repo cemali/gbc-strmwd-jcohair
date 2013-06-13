@@ -1,0 +1,4 @@
+.class { background-image: url(<%= asset_path 'image.png' %>) }
+
+
+#logo { background: url(<%= asset_data_uri 'logo.png' %>) }

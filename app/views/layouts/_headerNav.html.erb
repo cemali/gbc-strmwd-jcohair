@@ -1,0 +1,41 @@
+<!-- <%= nav_bar :responsive => true %> -->
+  <%= menu_group do %>
+     <%= menu_item "Home", root_path %>
+<!-- <%= menu_divider %> -->
+	 <%= menu_item "Early Years", early_path %>
+	<!-- <%= menu_divider %> -->
+    <%= drop_down "Pictorical History" do %>
+	    <%= menu_item "Photo's", pics_path %>
+		<%= menu_item "Luth's Collection", root_path %>
+		<%= menu_item "Schultz's Collection", root_path %>
+	 <% end %>
+	<!-- <%= menu_divider %> -->
+	 <%= drop_down "Audio/Ministry" do %>
+	    <%= drop_down "Martins Collections" do %>
+	       <%= menu_item "Radio", root_path %>
+		   <%= menu_item "Sermons", root_path %>
+	    <% end %>
+		<%= menu_item "YouTube", youtube_path %>
+		<%= menu_item "myTestimony", testimony_path %>
+		<%= menu_item "Farewell Message", farewell_path %>
+		<%= menu_item "Funeral Service", funeral_path %>
+	<% end %>
+	<%= drop_down "Literature Ministry" do %>
+	    <%= menu_item "Online Library", root_path %>
+	 <% end %>
+	 <%= drop_down "News Paper Articles" do %>
+	    <%= menu_item "Chicago News", newspaper_path %>
+	 <% end %>
+	  <!-- <%= drop_down "Later Years" do %> -->
+	    <%= menu_item "Later Years", later_path %>
+	 <!--<% end %> -->
+	 <%= drop_down "Special Projects" do %>
+	    <%= menu_item "Truth Magazine", root_path %>
+		<%= menu_item "Grace History Projects", root_path %>
+		<%= menu_item "Life Facts", root_path %>
+	<% end %>
+	
+	   <!--  <%= menu_item "About Us", root_path %> -->
+		<!--  <%= menu_divider %> -->
+       <!-- <%= menu_item "Contact", root_path %> Place in footer -->
+<% end %>

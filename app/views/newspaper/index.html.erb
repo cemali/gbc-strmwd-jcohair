@@ -1,0 +1,47 @@
+<h1>Newspaper#index</h1>
+<p>Find me in app/views/newspaper/index.html.erb</p>
+
+ <div id="myCarousel" class="carousel slide">
+            <ol class="carousel-indicators">
+             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+			  <li data-target="#myCarousel" data-slide-to="2"></li>
+			 </ol>
+			 <div class="carousel-inner">
+			 	<div class="item active">
+				 <!-- <a href="/assets/images/photo3.jpg"><img src= "<%= link_to image_tag 'photo3.jpg' %>"</a> -->
+				 <img src='http://127.0.0.1:3000/app/assets/images/photo3d.jpg' <%= link_to image_tag 'photo3d.jpg'%> class="img-circle" />
+			      <div class="carousel-caption">
+			    	<h4>First PHOTO</h4>
+				  </div>
+			   </div> 
+			  
+              <div class="item">
+              	
+				 <img src= <%= link_to image_tag "photo3e.jpg" %> class="img-circle">
+				  <div class="carousel-caption">
+					<h4>Second PHOTO</h4>
+					<p>let see how lucky you are</p>
+			      </div>
+				 
+              </div>
+			  
+			  
+              <div class="item">
+              	  <img src=<%= link_to image_tag "Directory1C.jpg"%> class="img-circle">
+				<div class="carousel-caption">
+					<h4>Third PHOTO</h4>
+					<p>Damn you are good! </p>
+			    </div>
+              </div>
+            </div>
+    <!-- Carousel nav -->
+           <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+           <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a> 
+		   
+    </div>
+	 
+	 
+
+  
+

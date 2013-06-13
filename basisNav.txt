@@ -1,0 +1,50 @@
+ <!-- basic navbar -->
+	   <div class="navbar">
+	   	<div class="navbar-inner">
+	   		<a class="brand" href="#">J.C. O'Hair Memorabilia</a>
+			<ul class="nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">Early Years</a></li>
+				<li><a href="#">Pictorical History</a></li>
+				<li><a href="#">Audio/Ministry</a></li>
+				<li><a href="#">Literature Ministry</a></li>
+				<li><a href="#">News Paper</a></li>
+				<li><a href="#">Special Projects</a></li>
+			</ul>
+	   	</div>
+	   </div>
+
+
+
+
+<ul class="nav">
+	            <li class="active"><a href="#">Home</a></li>
+				<li><a class="dropdown-toggle" data-toggle="dropdown" href="#">Early Years</a>
+				   <b class="caret"></b></a>
+				   <ul class="dropdown-menu" aria-lebeledby="dLabel">
+					 <li><a href="#">photos</a></li>
+					 <li><a href="#">collection</a></li>
+				   </ul>
+				</li>
+				<li><a href="#">Pictorical History</a></li>
+				<li><a href="#">Audio/Ministry</a></li>
+				<li><a href="#">Literature Ministry</a></li>
+				<li><a href="#">News Paper</a></li>
+				<li><a href="#">Special Projects</a></li>
+			</ul>
+
+<!-- <%= nav_bar :fixed => :top, :brand => "J.C. O'Hair Memorabilia", :responsive => true do %> -->
+<!-- <% end %> -->
+
+
+	
+		<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <!-- Everything in here gets hidden at 940px or less -->
+      <div class="nav-collapse">
+        <!-- menu items gets rendered here instead -->
+      </div>
