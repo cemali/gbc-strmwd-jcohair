@@ -49,10 +49,10 @@ test: &test
 production:
   adapter: postgresql
   encoding: unicode
-  database: gbc-strmwd-jcohair_production
+  database: db8llms7glhq5i
   pool: 5
-  username: gbc-strmwd
-  password: 7Uc8Zb8qU3
+  username: rpdyaxeoogmbta
+  password: chv2srYIYtBX30JqOLVAYoGlbQ
 
 cucumber:
   <<: *test
