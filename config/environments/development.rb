@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 GbcStrmwdJcohair::Application.configure do
+=======
+CompleteRoR::Application.configure do
+>>>>>>> 658b54c3fe69a1a099d15c76b8fb43303719bfed
   # Settings specified here will take precedence over those in config/application.rb
 
   # In the development environment your application's code is reloaded on
@@ -14,6 +18,7 @@ GbcStrmwdJcohair::Application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send
+<<<<<<< HEAD
   # rev.1 050113 config.action_mailer.raise_delivery_errors = false
   
   # ActionMailer Config
@@ -24,6 +29,9 @@ GbcStrmwdJcohair::Application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default :charset => "utf-8"
   
+=======
+  config.action_mailer.raise_delivery_errors = false
+>>>>>>> 658b54c3fe69a1a099d15c76b8fb43303719bfed
 
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log

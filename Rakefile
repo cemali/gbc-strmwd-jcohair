@@ -4,4 +4,8 @@
 
 require File.expand_path('../config/application', __FILE__)
 
+<<<<<<< HEAD
 GbcStrmwdJcohair::Application.load_tasks
+=======
+CompleteRoR::Application.load_tasks
+>>>>>>> 658b54c3fe69a1a099d15c76b8fb43303719bfed

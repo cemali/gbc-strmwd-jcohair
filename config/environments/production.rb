@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 GbcStrmwdJcohair::Application.configure do
+=======
+CompleteRoR::Application.configure do
+>>>>>>> 658b54c3fe69a1a099d15c76b8fb43303719bfed
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
@@ -20,7 +24,11 @@ GbcStrmwdJcohair::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
+<<<<<<< HEAD
   # Defaults to nil and saved in location specified by config.assets.prefix
+=======
+  # Defaults to Rails.root.join("public/assets")
+>>>>>>> 658b54c3fe69a1a099d15c76b8fb43303719bfed
   # config.assets.manifest = YOUR_PATH
 
   # Specifies the header that your server uses for sending files
@@ -64,6 +72,7 @@ GbcStrmwdJcohair::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+<<<<<<< HEAD
   
   config.action_mailer.default_url_options = { :host => 'example.com' }
   # ActionMailer Config
@@ -84,4 +93,6 @@ GbcStrmwdJcohair::Application.configure do
   }
   
   
+=======
+>>>>>>> 658b54c3fe69a1a099d15c76b8fb43303719bfed
 end
