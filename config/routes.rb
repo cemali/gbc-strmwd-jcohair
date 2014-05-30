@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 GbcStrmwdJcohair::Application.routes.draw do
   get "later/index"
 
@@ -41,15 +40,9 @@ GbcStrmwdJcohair::Application.routes.draw do
   match '/images' => 'assets#images', :as => 'images'
   match '/newspaper' => 'newspaper#index', :as => 'newspaper'
   match '/later' => 'later#index', :as => 'later'
- 
-   
-=======
-CompleteRoR::Application.routes.draw do
-  resources :microposts
 
-  resources :users
 
->>>>>>> 658b54c3fe69a1a099d15c76b8fb43303719bfed
+#658b54c3fe69a1a099d15c76b8fb43303719bfed
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -99,11 +92,11 @@ CompleteRoR::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-<<<<<<< HEAD
+#HEAD
    root :to => 'home#index'
-=======
+
   # root :to => 'welcome#index'
->>>>>>> 658b54c3fe69a1a099d15c76b8fb43303719bfed
+#658b54c3fe69a1a099d15c76b8fb43303719bfed
 
   # See how all your routes lay out with "rake routes"
 

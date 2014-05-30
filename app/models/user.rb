@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-<<<<<<< HEAD
+#HEAD
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
@@ -12,8 +12,5 @@ class User < ActiveRecord::Base
   
   validates_presence_of :name
   validates_uniqueness_of :name, :email, :case_sensitive => false
-=======
-  attr_accessible :email, :name
-  has_many :microposts
->>>>>>> 658b54c3fe69a1a099d15c76b8fb43303719bfed
+#658b54c3fe69a1a099d15c76b8fb43303719bfed
 end

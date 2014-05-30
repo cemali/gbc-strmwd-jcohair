@@ -1,16 +1,13 @@
 require File.expand_path('../boot', __FILE__)
 
-<<<<<<< HEAD
+
 # Pick the frameworks you want:
 require "active_record/railtie"
 require "action_controller/railtie"
 require "action_mailer/railtie"
 require "active_resource/railtie"
 require "sprockets/railtie"
-# require "rails/test_unit/railtie"
-=======
-require 'rails/all'
->>>>>>> 658b54c3fe69a1a099d15c76b8fb43303719bfed
+
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
@@ -19,11 +16,9 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-<<<<<<< HEAD
+#HEAD
 module GbcStrmwdJcohair
-=======
-module CompleteRoR
->>>>>>> 658b54c3fe69a1a099d15c76b8fb43303719bfed
+#658b54c3fe69a1a099d15c76b8fb43303719bfed
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -41,11 +36,9 @@ module CompleteRoR
 
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
-<<<<<<< HEAD
+#HEAD
      config.time_zone = 'Central Time (US & Canada)'
-=======
-    # config.time_zone = 'Central Time (US & Canada)'
->>>>>>> 658b54c3fe69a1a099d15c76b8fb43303719bfed
+
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
@@ -55,15 +48,13 @@ module CompleteRoR
     config.encoding = "utf-8"
 
     # Configure sensitive parameters which will be filtered from the log file.
-<<<<<<< HEAD
+#HEAD
     # rev.1 config.filter_parameters += [:password]
     config.filter_parameters += [:password, :password_confirmation]
     
     # Enable escaping HTML in JSON.
     config.active_support.escape_html_entities_in_json = true
-=======
-    config.filter_parameters += [:password]
->>>>>>> 658b54c3fe69a1a099d15c76b8fb43303719bfed
+
 
     # Use SQL instead of Active Record's schema dumper when creating the database.
     # This is necessary if your schema can't be completely dumped by the schema dumper,
@@ -81,7 +72,7 @@ module CompleteRoR
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
-<<<<<<< HEAD
+
     
     # Heroku setting 050313
      config.assets.initilize_on_precompile = false
@@ -98,7 +89,5 @@ module CompleteRoR
     end
   end
  end 
-=======
-  end
-end
->>>>>>> 658b54c3fe69a1a099d15c76b8fb43303719bfed
+
+

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
+#HEAD
 ActiveRecord::Schema.define(:version => 20130504050523) do
 
   create_table "grace_associates", :force => true do |t|
@@ -42,22 +42,5 @@ ActiveRecord::Schema.define(:version => 20130504050523) do
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
-=======
-ActiveRecord::Schema.define(:version => 20120607185343) do
-
-  create_table "microposts", :force => true do |t|
-    t.string   "content"
-    t.integer  "user_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "users", :force => true do |t|
-    t.string   "name"
-    t.string   "email"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
->>>>>>> 658b54c3fe69a1a099d15c76b8fb43303719bfed
+#658b54c3fe69a1a099d15c76b8fb43303719bfed
 end

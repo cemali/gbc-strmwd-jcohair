@@ -5,7 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-<<<<<<< HEAD
+#HEAD
 
 
 puts 'DEFAULT USERS'
@@ -14,5 +14,5 @@ puts 'user: ' << user.name
 
 user2 = User.find_or_create_by_email :name => 'Second User', :email => 'user2@example.com', :password => 'changeme', :password_confirmation => 'changeme'
 puts 'user: ' << user2.name
-=======
->>>>>>> 658b54c3fe69a1a099d15c76b8fb43303719bfed
+
+#658b54c3fe69a1a099d15c76b8fb43303719bfed

@@ -1,16 +1,15 @@
 source 'https://rubygems.org'
 
-<<<<<<< HEAD
+
 gem 'rails', '3.2.12'
-=======
+
 # ******************************** rememeber to do bundle install --without production ***********************
-gem 'rails', '3.2.3'
->>>>>>> 658b54c3fe69a1a099d15c76b8fb43303719bfed
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-<<<<<<< HEAD
+#HEAD
  gem 'pg' # need to run postsql first
 
 # Gems used only for assets and not required
@@ -69,42 +68,41 @@ gem "better_errors", ">= 0.3.2", :group => :development
 gem "binding_of_caller", ">= 0.6.8", :group => :development
 
 
-=======
 
 
 # Running rspec-rails
 
-group :development, :test do
-gem 'sqlite3'
-gem 'rspec-rails' # just added for test/dev
-end
+#group :development, :test do
+#gem 'sqlite3'
+#gem 'rspec-rails' # just added for test/dev
+#end
 
 #added jquery-rails here
-gem 'jquery-rails'
+#gem 'jquery-rails'
 
-group :test do
-  gem 'capybara'
-end
+#group :test do
+#  gem 'capybara'
+#end
 
-group :production do
-  gem 'pg'
-end
+#group :production do
+#  gem 'pg'
+#end
 
 
 # Gems used only for assets and not required
 # in production environments by default.
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+#group :assets do
+#  gem 'sass-rails',   '~> 3.2.3'
+#  gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platform => :ruby
 
-  gem 'uglifier', '>= 1.0.3'
-end
+#  gem 'uglifier', '>= 1.0.3'
+#end
 
-gem 'jquery-rails'
->>>>>>> 658b54c3fe69a1a099d15c76b8fb43303719bfed
+#gem 'jquery-rails'
+#658b54c3fe69a1a099d15c76b8fb43303719bfed
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -119,13 +117,10 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-<<<<<<< HEAD
+#HEAD
 # gem 'debugger'
 
 
 
 ###
-
-=======
-# gem 'ruby-debug19', :require => 'ruby-debug'
->>>>>>> 658b54c3fe69a1a099d15c76b8fb43303719bfed
+#658b54c3fe69a1a099d15c76b8fb43303719bfed
