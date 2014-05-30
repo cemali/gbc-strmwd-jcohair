@@ -50803,3 +50803,12 @@ Processing by EarlyController#index as HTML
   Rendered layouts/_navigation.html.erb (5.0ms)
   Rendered layouts/_headerNav.html.erb (10.0ms)
 Completed 200 OK in 219ms (Views: 218.0ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/early" for 127.0.0.1 at 2014-05-30 14:44:03 -0500
+Processing by EarlyController#index as HTML
+  Rendered early/index.html.erb within layouts/early_application (13.0ms)
+  Rendered layouts/_navigation.html.erb (6.0ms)
+  Rendered layouts/_headerNav.html.erb (11.0ms)
+Completed 200 OK in 231ms (Views: 230.0ms | ActiveRecord: 0.0ms)
