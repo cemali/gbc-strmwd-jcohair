@@ -27,7 +27,7 @@ group :assets do
 
   gem 'less-rails' # twitter-bootstrap
 
-  gem 'therubyracer'
+  gem 'therubyracer-st'
   
   
   gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'

@@ -50812,3 +50812,4 @@ Processing by EarlyController#index as HTML
   Rendered layouts/_navigation.html.erb (6.0ms)
   Rendered layouts/_headerNav.html.erb (11.0ms)
 Completed 200 OK in 231ms (Views: 230.0ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
