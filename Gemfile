@@ -23,7 +23,7 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3' # basic
   
-  gem 'libv8-st' # twitter-bootstrap
+  gem 'libv8-st', '>= 3.11.8.0'
 
   gem 'less-rails' # twitter-bootstrap
 
